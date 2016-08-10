@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bdbApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Boston Durga Bari</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+</head>
+<body class="container" ng-controller="bdbController">
+    <header class="col-sm-12">
+        Hi, I am Header Section
+    </header>
+    <div id="content" class="col-sm-12">
+        <h1>Welcome to Boston Durga Bari Website</h1>
+        <p>Building Something Awesome!! Come back soon!</p>
+        <label for="fName">First Name: </label>
+        <input id="fName" type="text" value="{{firstName}}"/>
+        <label for="lName">Last Name: </label>
+        <input id="lName" type="text" value="{{lastName}}"/>
+    </div>
+    <footer class="col-sm-12">
+        Hi, I am Footer Section
+    </footer>
+</body>
+<script type="text/javascript" src="js/angular-min.js"></script>
+<script type="text/javascript" src="js/angular-route-min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</html>
