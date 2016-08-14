@@ -1,4 +1,8 @@
 .container{
-    background-image: url("../images/background_img.jpg");
+    /*background-image: url("../images/background_img.jpg");*/
     /*background-color: lightgrey;*/
+}
+
+.carousel-inner{
+    background-color: goldenrod;
 }

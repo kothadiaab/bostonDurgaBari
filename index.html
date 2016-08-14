@@ -2,6 +2,7 @@
 <html lang="en" ng-app="bdbApp">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Boston Durga Bari</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
@@ -11,17 +12,90 @@
         Hi, I am Header Section
     </header>
     <div id="content" class="col-sm-12">
-        <h1>Welcome to Boston Durga Bari Website</h1>
-        <p>Building Something Awesome!! Come back soon!</p>
-        <label for="fName">First Name: </label>
-        <input id="fName" type="text" value="{{firstName}}"/>
-        <label for="lName">Last Name: </label>
-        <input id="lName" type="text" value="{{lastName}}"/>
+        <!-- SLider section-->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!--Wrapper for Slides-->
+            <div class="carousel-inner" role="listbox">
+
+                <div class="item active">
+                    <p>This will be the content for 1st slide</p><br/>
+                    <p>This will be the content for 1st slide</p><br/>
+                    <p>This will be the content for 1st slide</p><br/>
+                    <p>This will be the content for 1st slide</p><br/>
+                    <p>This will be the content for 1st slide</p><br/>
+                    <p>This will be the content for 1st slide</p><br/>
+                    <p>This will be the content for 1st slide</p><br/>
+                </div>
+
+                <div class="item">
+                    <p>This will be the content for 2nd slide</p><br/>
+                    <p>This will be the content for 2nd slide</p><br/>
+                    <p>This will be the content for 2nd slide</p><br/>
+                    <p>This will be the content for 2nd slide</p><br/>
+                    <p>This will be the content for 2nd slide</p><br/>
+                    <p>This will be the content for 2nd slide</p><br/>
+                    <p>This will be the content for 2nd slide</p><br/>
+                </div>
+
+                <div class="item">
+                    <p>This will be the content for 3rd slide</p><br/>
+                    <p>This will be the content for 3rd slide</p><br/>
+                    <p>This will be the content for 3rd slide</p><br/>
+                    <p>This will be the content for 3rd slide</p><br/>
+                    <p>This will be the content for 3rd slide</p><br/>
+                    <p>This will be the content for 3rd slide</p><br/>
+                    <p>This will be the content for 3rd slide</p><br/>
+                </div>
+            </div>
+
+            <!--Left and Right Controls-->
+            <!--<a href="#myCarousel" class="left carousel-control" role="button" data-slide="prev">-->
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                <!--<span class="sr-only">Previous</span>-->
+            <!--</a>-->
+            <!--<a href="#myCarousel" class="right carousel-control" role="button" data-slide="next">-->
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                <!--<span class="sr-only">Next</span>-->
+            <!--</a>-->
+        </div>
+        <div>&nbsp;</div>
+        <div class="col-sm-8">
+            <h2>Events</h2>
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active"><a href="#day1" data-toggle="tab">Day 1</a></li>
+                <li role="presentation"><a href="#day2" data-toggle="tab">Day 2</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="day1" class="tab-pane fade in active" style="background-color: aqua">
+                    <div>&nbsp;</div>
+                    <h3 style="margin-top: 0px;">Day 1</h3>
+                    <p>This is content for tab 1</p>
+                </div>
+                <div id="day2" class="tab-pane fade" style="background-color: greenyellow">
+                    <div>&nbsp;</div>
+                    <h3 style="margin-top: 0px;">Day 2</h3>
+                    <p>This is content for tab 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 table-bordered">
+            <p>
+                This is side nav bar
+            </p>
+        </div>
     </div>
     <footer class="col-sm-12">
         Hi, I am Footer Section
     </footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/angular-min.js"></script>
 <script type="text/javascript" src="js/angular-route-min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
