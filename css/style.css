@@ -1,11 +1,12 @@
 .logo-image{
     height: 150px;
-    width: 225px;
+    width: 300px;
 }
 .header-section{
     margin-top: 75px;
-    font-size: 20px;
+    font-size: 16px;
     font-family: fantasy;
+    font-weight: bolder;
 }
 
 .header-nav {
@@ -19,7 +20,6 @@
 .header-section nav ul li :hover {
     background-color: #990000;
 }
-
 .container{
     /*background-image: url("../images/background_img.jpg");*/
     background-color: #efeff5;
@@ -51,4 +51,33 @@
     font-size: 17px;
     font-weight: 600;
     color: #990000;
+}
+
+#emailForm input{
+    width: 300px;
+    height: 40px;
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: 100;
+    text-indent: 5px;
+    color: #000;
+}
+
+#emailForm textarea{
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: 100;
+    text-indent: 5px;
+    color: #000;
+}
+
+.page-title-background{
+    background-color: #990000;
+    color: #ffd966;
+}
+
+.footer-background{
+    background-color: #990000;
+    color: #ffd966;
+    font-family: fantasy;
 }

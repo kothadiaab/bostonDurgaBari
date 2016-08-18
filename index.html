@@ -8,33 +8,34 @@
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
 </head>
 <body class="container">
-    <header id="bdbHeader" class="col-sm-12">
-        <div class="col-sm-3">
+    <header id="bdbHeader" class="col-sm-12 header-static">
+        <div class="col-sm-3" style="padding-left: 0px;">
             <a href="#/"><img src="images/logo/logo.jpg" class="logo-image" alt="Boston Durga Bari"/></a>
         </div>
         <div class="col-sm-9 header-section">
             <nav class="navbar navbar-right">
                     <ul class="nav navbar-nav">
-                        <li><a href="#/" class="header-nav">Home <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#our-vision" class="header-nav">Our Vision</a></li>
-                        <li><a href="#contact-us" class="header-nav">Contact Us</a></li>
-                        <li><a href="#event-ads" class="header-nav">Advertisements</a></li>
-                        <li><a href="#our-events" class="header-nav">Our Events</a></li>
-                        <li id="register-btn"><a href="#" class="btn" style="font-size: 21px;font-weight: bolder;background-color: #990000;color: #ffd966;margin-top: -1px;">Register Today</a></li>
+                        <li><a href="#/" class="header-nav">HOME <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#our-vision" class="header-nav">OUR VISION</a></li>
+                        <li><a href="#contact-us" class="header-nav">CONTACT US</a></li>
+                        <li><a href="#event-ads" class="header-nav">ADVERTISEMENTS</a></li>
+                        <li><a href="#our-events" class="header-nav">OUR EVENTS</a></li>
+                        <li id="register-btn"><a href="#" class="btn" style="font-size: 21px;font-weight: bolder;background-color: #990000;color: #ffd966;margin-top: -1px;">REGISTER</a></li>
                     </ul>
             </nav>
         </div>
     </header>
     <div>&nbsp;</div>
     <div id="main">
-
-        <!-- angular templating -->
-        <!-- this is where content will be injected -->
         <div ng-view></div>
-
     </div>
-    <footer class="col-sm-12">
-        Hi, I am Footer Section
+    <footer class="col-sm-12 footer-background">
+        <div class="text-center">
+            <h4>CONNECT WITH US</h4>
+            <div>
+                
+            </div>
+        </div>
     </footer>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
