@@ -1,6 +1,28 @@
+.logo-image{
+    height: 150px;
+    width: 225px;
+}
+.header-section{
+    margin-top: 75px;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+.header-nav {
+    color: #990000;
+}
+
+.header-nav:hover {
+    color: #ffd966;
+}
+
+.header-section nav ul li :hover {
+    background-color: #990000;
+}
+
 .container{
     /*background-image: url("../images/background_img.jpg");*/
-    /*background-color: lightgrey;*/
+    background-color: #efeff5;
 }
 
 .carousel-inner{
@@ -21,4 +43,12 @@
 .panel-title.collapsed:after {
     /* symbol for "collapsed" panels */
     content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+}
+
+/*style for our vision page*/
+.our-vision-font{
+    font-family: fantasy;
+    font-size: 17px;
+    font-weight: 600;
+    color: #990000;
 }
