@@ -1,32 +1,54 @@
 .logo-image{
-    height: 150px;
+    height: 170px;
     width: 300px;
 }
 .header-section{
     margin-top: 75px;
-    font-size: 16px;
+    font-size: 15px;
     font-family: fantasy;
     font-weight: bolder;
 }
 
 .header-nav {
-    color: #990000;
+    color: #fff;
 }
 
 .header-nav:hover {
-    color: #ffd966;
+    color: #990000;
 }
 
 .header-section nav ul li :hover {
-    background-color: #990000;
+    background-color: #ffd966;
+    border-radius: 5px;
 }
+
+.header-section nav ul li :focus {
+    background-color: #ffd966;
+    color: #990000;
+    border-radius: 5px;
+}
+
+#bdbHeader{
+    background-color: #990000;
+    height: 200px;
+    line-height: 20px;
+}
+
+
+.register-button{
+    font-weight: bolder; !important;
+    background-color: #ffd966; !important;
+    color: #990000; !important;
+    margin-top: -1px; !important;
+}
+
 .container{
     /*background-image: url("../images/background_img.jpg");*/
     background-color: #efeff5;
 }
 
 .carousel-inner{
-    background-color: goldenrod;
+    background-color: #ffd966;
 }
 
 .panel-heading {
@@ -50,7 +72,8 @@
     font-family: fantasy;
     font-size: 17px;
     font-weight: 600;
-    color: #990000;
+    background-color: #ffd966;
+    /*color: #990000;*/
 }
 
 #emailForm input{
@@ -71,9 +94,27 @@
     color: #000;
 }
 
-.page-title-background{
+.contact-button{
     background-color: #990000;
     color: #ffd966;
+    font-weight: bolder;
+    width: 125px;
+    height: 50px;
+}
+
+
+#sendButton{
+    font-size: 20px;
+}
+
+#sendButton:hover{
+    background-color: #cc0000;
+    color: #fff;
+}
+
+.page-title-background{
+    background-color: #ffd966;
+    color: #990000;
 }
 
 .footer-background{
