@@ -1,11 +1,11 @@
 .logo-image{
-    height: 170px;
-    width: 300px;
+    height: 120px;
+    width: 250px;
 }
 .header-section{
-    margin-top: 75px;
-    font-size: 15px;
-    font-family: fantasy;
+    margin-top: 55px;
+    font-size: 20px;
+    font-family: sans-serif;
     font-weight: bolder;
 }
 
@@ -18,37 +18,45 @@
 }
 
 .header-section nav ul li :hover {
-    background-color: #ffd966;
+    background-color: #ffdab3;
     border-radius: 5px;
 }
 
 .header-section nav ul li :focus {
-    background-color: #ffd966;
+    background-color: #ffdab3;
     color: #990000;
     border-radius: 5px;
 }
 
 #bdbHeader{
     background-color: #990000;
-    height: 200px;
+    height: 150px;
     line-height: 20px;
 }
 
+#register-btn{
+    margin-top: 55px;
+    font-size: 20px;
+    font-weight: bolder;
+    height: 51px;
+    width: 170px;
+}
+
+.register-button:hover{
+    background-color: #ffdab3; !important;
+}
 
 .register-button{
     font-weight: bolder; !important;
-    background-color: #ffd966; !important;
+    background-color: #ffd633; !important;
     color: #990000; !important;
-    margin-top: -1px; !important;
+    /*margin-top: -1px; !important;*/
+    font-size: 17px; !important;
 }
 
 .container{
     /*background-image: url("../images/background_img.jpg");*/
     background-color: #efeff5;
-}
-
-.carousel-inner{
-    background-color: #ffd966;
 }
 
 .panel-heading {
@@ -69,10 +77,10 @@
 
 /*style for our vision page*/
 .our-vision-font{
-    font-family: fantasy;
+    font-family: sans-serif;
     font-size: 17px;
-    font-weight: 600;
-    background-color: #ffd966;
+    /*font-weight: 600;*/
+    background-color: #ffdab3;
     /*color: #990000;*/
 }
 
@@ -96,7 +104,7 @@
 
 .contact-button{
     background-color: #990000;
-    color: #ffd966;
+    color: #ffdab3;
     font-weight: bolder;
     width: 125px;
     height: 50px;
@@ -113,12 +121,12 @@
 }
 
 .page-title-background{
-    background-color: #ffd966;
+    background-color: #ffdab3;
     color: #990000;
 }
 
 .footer-background{
     background-color: #990000;
-    color: #ffd966;
-    font-family: fantasy;
+    color: #ffdab3;
+    font-family: sans-serif;
 }
