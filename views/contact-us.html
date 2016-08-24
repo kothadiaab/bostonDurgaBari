@@ -7,40 +7,40 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 our-vision-font">
+            <div class="col-sm-12 our-vision-font">
                 <div class=" page-title-background">
                     <h1 class=" text-center" style="font-weight: 800">CONTACT US</h1>
                 </div>
-                <div>
-                    <div>&nbsp;</div>
-                    <h3 style="font-weight: bold; color: #000">Call Us:</h3>
-                    <p style="color: #000">If you would like to ask us any question, feel free to call</p>
-                    <p>Jayati – (857)350-6101</p>
-                    <p>Rakesh – (857)264-9014</p>
-                    <p>Tridib – (617)650-6356</p>
-                    <p>Pamela – (617)800-7857</p>
-                </div>
-                <div>
-                    <form name="emailForm" id="emailForm">
+                <div>&nbsp;</div>
+                <div class="col-sm-6">
+                    <form name="emailForm" id="emailForm" action="MAILTO:kothadia.ab@gmail.com" method="post" enctype="text/plain">
                         <h3 style="font-weight: bold; color: #000">Email Us:</h3>
-                        <p style="color: #000">Drop us a line</p>
-                        <label for="fullName">Your Name (Required)</label><br/>
-                        <input type="text" id="fullName" placeholder="Enter Full Name Here..." required/><br/>
+                        <p style="color: #990000">Drop us a line</p>
+                        Your Name (Required)<br>
+                        <input type="text" name="Full Name " class="email-input" placeholder="Enter Your Full Name..."><br>
                         <div>&nbsp;</div>
-                        <label for="emailAddress">Your Email (Required)</label><br/>
-                        <input type="text" id="emailAddress" placeholder="Enter Email Address Here..." required/><br/>
+                        Your Email (Required)<br>
+                        <input type="text" name="Email " class="email-input" placeholder="Enter Your Email..."><br>
                         <div>&nbsp;</div>
-                        <label for="subject">Subject</label><br/>
-                        <input type="text" id="subject" placeholder="Subject..."/><br/>
+                        Subject<br>
+                        <input type="text" name="Subject" class="email-input" placeholder="Subject..."><br>
                         <div>&nbsp;</div>
-                        <label for="messageArea">Your Message</label><br/>
-                        <textarea name="messageArea" id="messageArea" cols="35" rows="5" placeholder="Enter Your Message Here..."></textarea><br/>
+                        Your Message<br>
+                        <textarea name="Message: " id="messageArea" cols="47" rows="5" placeholder="Enter Your Message Here..."></textarea><br/>
                         <div>&nbsp;</div>
-                        <!--<input type="button" class="btn contact-button" value="Your Message"/>-->
-                        <button id="sendButton" class=" btn contact-button">Send</button>
+                        <input type="submit" id="sendButton" class=" btn contact-button" value="Send">
+                        <!--<input type="reset" value="Reset">-->
                         <div>&nbsp;</div>
                         <div>&nbsp;</div>
                     </form>
+                </div>
+                <div class="col-sm-6">
+                    <h3 style="font-weight: bold; color: #000">Call Us:</h3>
+                    <p style="color: #990000">If you would like to ask us any question, feel free to call</p>
+                    <p>Jayati : (857) 350-6101</p>
+                    <p>Rakesh : (857) 264-9014</p>
+                    <p>Tridib : (617) 650-6356</p>
+                    <p>Pamela : (617) 800-7857</p>
                 </div>
             </div>
         </div>

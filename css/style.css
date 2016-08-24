@@ -27,7 +27,7 @@
     background-color: #990000;
     color: #000;
     /*border-radius: 5px;*/
-    border-bottom: 5px solid #000;
+    border-bottom: solid 5px #000;
 }
 
 #bdbHeader{
@@ -54,6 +54,11 @@
     color: #990000; !important;
     /*margin-top: -1px; !important;*/
     font-size: 17px; !important;
+}
+
+.top-images{
+    width: 350px;
+    height: 200px;
 }
 
 .container{
@@ -86,8 +91,8 @@
     /*color: #990000;*/
 }
 
-#emailForm input{
-    width: 300px;
+.email-input{
+    width: 400px;
     height: 40px;
     font-family: sans-serif;
     font-size: 15px;
@@ -115,6 +120,8 @@
 
 #sendButton{
     font-size: 20px;
+    width: 125px;
+    color: #fff;
 }
 
 #sendButton:hover{
