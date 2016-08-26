@@ -13,7 +13,9 @@ var bdbApp = angular.module('bdbApp', ['ngRoute']);
 bdbApp.config(function($routeProvider) {
     $routeProvider
         .when('/', {
-            templateUrl : "views/home.html"
+            templateUrl : "views/home.html",
+            controller  : 'homeController',
+            controllerAs: 'hCtrl'
         })
         .when('/our-vision', {
             templateUrl : "views/our-vision.html",
@@ -32,4 +34,16 @@ bdbApp.config(function($routeProvider) {
 
 bdbApp.controller('ourVisionController', function($scope) {
     // create a message to display in our view
+});
+
+bdbApp.controller('homeController', function($scope){
+    this.hCtrl = 1;
+
+    this.setTab = function (tabId) {
+        this.hCtrl = tabId;
+    };
+
+    this.isSet = function (tabId) {
+        return this.hCtrl === tabId;
+    };
 });

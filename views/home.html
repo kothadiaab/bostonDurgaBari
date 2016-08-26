@@ -11,128 +11,132 @@
         <div class="row our-vision-font">
             <div class="col-sm-12" style="background-color: #000">
                 <div>&nbsp;</div>
-                <div class="col-sm-3 text-center">
-                    <a href="#/">
+                <a href="#/">
+                    <div class="col-sm-3 text-center">
                         <img src="images/durga_puja.jpg" alt="Angry Bird" class="home-3-images"/>
-                        <p>PUJA</p>
-                    </a>
-                </div>
-                <div class="col-sm-6 text-center">
-                    <a href="#our-vision">
+                        <p class="image-text">PUJA</p>
+                    </div>
+                </a>
+                <a href="#our-vision">
+                    <div class="col-sm-6 text-center">
                         <img src="images/drama.jpg" alt="Angry Bird" class="home-6-images"/>
-                        <p style="color: #fff3e6; text-decoration: none">AN ORIGINAL PLAY WRITTEN AND DIRECTED BY<br/>JAYATI BANERJEE</p>
-                    </a>
-                </div>
-                <div class="col-sm-3 text-center">
-                    <a href="#event-ads">
+                        <p class="image-text">AN ORIGINAL PLAY BY JAYATI BANERJEE</p>
+                    </div>
+                </a>
+                <a href="#event-ads">
+                    <div class="col-sm-3 text-center">
                         <img src="images/pujo-food.jpg" alt="Angry Bird" class="home-3-images"/>
-                        <p>FOOD</p>
-                    </a>
-                </div>
+                        <p class="image-text">FOOD</p>
+                    </div>
+                </a>
                 <div>&nbsp;</div>
             </div>
             <div class="col-sm-12" style="background-color: #000">
-                <div class="col-sm-3 text-center">
-                    <a href="#contact-us">
+                <a href="#contact-us">
+                    <div class="col-sm-3 text-center">
                         <img src="images/dhol.png" alt="Angry Bird" class="home-3-images"/>
-                        <p>CLASSICAL MUSIC BY<br/>ADITYA SHAH</p>
-                    </a>
-                </div>
-                <div class="col-sm-2 text-center">
-                    <a href="#contact-us">
+                        <p class="image-text">CLASSICAL MUSIC BY<br/>ADITYA SHAH</p>
+                    </div>
+                </a>
+                <a href="#contact-us">
+                    <div class="col-sm-2 text-center">
                         <img src="images/odissi.jpg" alt="Angry Bird" class="home-2-images"/>
-                        <p>ODISSI DANCE BY SHAMOYITA</p>
-                    </a>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <a href="#contact-us">
+                        <p class="image-text">ODISSI DANCE BY SHAMOYITA</p>
+                    </div>
+                </a>
+                <a href="#contact-us">
+                    <div class="col-sm-4 text-center">
                         <img src="images/jojo.png" alt="Angry Bird" class="home-4-images"/>
-                        <p>MISS JOJO - LIVE IN CONCERT</p>
-                    </a>
-                </div>
-                <div class="col-sm-3 text-center">
-                    <a href="#contact-us">
+                        <p class="image-text">MISS JOJO <br/>LIVE IN CONCERT</p>
+                    </div>
+                </a>
+                <a href="#contact-us">
+                    <div class="col-sm-3 text-center">
                         <img src="images/dhol.png" alt="Angry Bird" class="home-3-images"/>
-                        <p>SHUDDHASWAR BY<br/>SHANTA NAG</p>
-                    </a>
-                </div>
+                        <p class="image-text">SHUDDHASWAR BY<br/>SHANTA NAG</p>
+                    </div>
+                </a>
                 <div class="col-sm-12">&nbsp;</div>
             </div>
             <div class="col-sm-12">&nbsp;</div>
-            <div class="col-sm-8" ng-init="tab = 1">
-                    <ul class="nav nav-tabs">
-                        <li role="presentation" class="active"><a href ng-click="tab = 1" data-toggle="tab">Oct 01</a></li>
-                        <li role="presentation"><a href ng-click="tab = 2" data-toggle="tab">Oct 02</a></li>
-                        <li role="presentation"><a href ng-click="tab = 3" data-toggle="tab">Venue</a></li>
-                    </ul>
-                    <div class="tab-content">
-                        <div id="day1" class="tab-pane fade in active" ng-show="tab == 1">
-                            <div>&nbsp;</div>
-                            <h4>
-                                <p>Day 1 Activities</p>
-                            </h4>
-                            <div class="panel-group" id="accordion">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" data-toggle="collapse" data-target="#day1Puja">
-                                        <h4 class="panel-title collapsed" data-toggle="collapse" data-target="#day1Puja">
-                                            Puja
-                                        </h4>
-                                    </div>
-                                    <div id="day1Puja" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <p>Puja Accordion Content</p><br/>
-                                            <p>Puja Accordion Content</p><br/>
-                                            <p>Puja Accordion Content</p><br/>
-                                            <p>Puja Accordion Content</p><br/>
-                                            <p>Puja Accordion Content</p><br/>
-                                        </div>
+            <div class="col-sm-8">
+                <ul class="nav nav-tabs">
+                    <li role="presentation" ng-class="{active:hCtrl.isSet(1)}"><a href ng-click="hCtrl.setTab(1)" data-toggle="tab"><span class="glyphicon glyphicon-calendar"></span> October 01</a></li>
+                    <li role="presentation" ng-class="{active:hCtrl.isSet(2)}"><a href ng-click="hCtrl.setTab(2)" data-toggle="tab"><span class="glyphicon glyphicon-calendar"></span> October 02</a></li>
+                    <li role="presentation" ng-class="{active:hCtrl.isSet(3)}"><a href ng-click="hCtrl.setTab(3)" data-toggle="tab"><span class="glyphicon glyphicon-map-marker"></span> Venue</a></li>
+                </ul>
+                <div ng-show="hCtrl.isSet(1)">
+                    <div id="day1">
+                        <div>&nbsp;</div>
+                        <h4>
+                            <p>Day 1 Activities</p>
+                        </h4>
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" data-target="#day1Puja">
+                                    <h4 class="panel-title collapsed" data-toggle="collapse" data-target="#day1Puja">
+                                        Puja
+                                    </h4>
+                                </div>
+                                <div id="day1Puja" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Puja Accordion Content</p><br/>
+                                        <p>Puja Accordion Content</p><br/>
+                                        <p>Puja Accordion Content</p><br/>
+                                        <p>Puja Accordion Content</p><br/>
+                                        <p>Puja Accordion Content</p><br/>
                                     </div>
                                 </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" data-toggle="collapse" data-target="#day1Food">
-                                        <h4 class="panel-title collapsed" data-toggle="collapse" data-target="#day1Food">
-                                            Food
-                                        </h4>
-                                    </div>
-                                    <div id="day1Food" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <p>Food Accordion Content</p><br/>
-                                            <p>Food Accordion Content</p><br/>
-                                            <p>Food Accordion Content</p><br/>
-                                            <p>Food Accordion Content</p><br/>
-                                            <p>Food Accordion Content</p><br/>
-                                        </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" data-target="#day1Food">
+                                    <h4 class="panel-title collapsed" data-toggle="collapse" data-target="#day1Food">
+                                        Food
+                                    </h4>
+                                </div>
+                                <div id="day1Food" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Food Accordion Content</p><br/>
+                                        <p>Food Accordion Content</p><br/>
+                                        <p>Food Accordion Content</p><br/>
+                                        <p>Food Accordion Content</p><br/>
+                                        <p>Food Accordion Content</p><br/>
                                     </div>
                                 </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" data-toggle="collapse" data-target="#day1Culture">
-                                        <h4 class="panel-title collapsed" data-toggle="collapse" data-target="#day1Culture">
-                                            Culture
-                                        </h4>
-                                    </div>
-                                    <div id="day1Culture" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <p>Culture Accordion Content</p><br/>
-                                            <p>Culture Accordion Content</p><br/>
-                                            <p>Culture Accordion Content</p><br/>
-                                            <p>Culture Accordion Content</p><br/>
-                                            <p>Culture Accordion Content</p><br/>
-                                        </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" data-target="#day1Culture">
+                                    <h4 class="panel-title collapsed" data-toggle="collapse" data-target="#day1Culture">
+                                        Culture
+                                    </h4>
+                                </div>
+                                <div id="day1Culture" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Culture Accordion Content</p><br/>
+                                        <p>Culture Accordion Content</p><br/>
+                                        <p>Culture Accordion Content</p><br/>
+                                        <p>Culture Accordion Content</p><br/>
+                                        <p>Culture Accordion Content</p><br/>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div id="day2" class="tab-pane fade" style="background-color: greenyellow" ng-show="tab == 2">
-                            <div>&nbsp;</div>
-                            <h3 style="margin-top: 0px;">Day 2</h3>
-                            <p>This is content for tab 2</p>
-                        </div>
-                        <div id="venue-map" class="tab-pane fade" ng-show="tab == 3">
-                            <div>&nbsp;</div>
-                            <h3 style="margin-top: 0px;">Venue Map</h3>
-                            <p>This is content for tab 3</p>
-                        </div>
                     </div>
+                </div>
+                <div ng-show="hCtrl.isSet(2)">
+                    <div id="day2">
+                        <div>&nbsp;</div>
+                        <h3 style="margin-top: 0px;">Day 2</h3>
+                        <p>This is content for tab 2</p>
+                    </div>
+                </div>
+                <div ng-show="hCtrl.isSet(3)">
+                    <div id="venue-map">
+                        <div>&nbsp;</div>
+                        <h3 style="margin-top: 0px;">Venue Map</h3>
+                        <p>This is content for tab 3</p>
+                    </div>
+                </div>
             </div>
             <div class="col-sm-4 table-bordered">
                 <div class="col-sm-12">
