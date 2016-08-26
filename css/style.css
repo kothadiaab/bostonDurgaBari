@@ -10,7 +10,7 @@
 }
 
 .header-nav {
-    color: #fff;
+    color: #000;
 }
 
 .header-nav:hover {
@@ -18,20 +18,20 @@
 }
 
 .header-section nav ul li :hover {
-    color: #000;
-    background-color: #990000;
+    color: #990000;
+    background-color: #fff;
     /*border-radius: 5px;*/
 }
 
 .header-section nav ul li :focus {
-    background-color: #990000;
-    color: #000;
+    background-color: #fff;
+    color: #990000;
     /*border-radius: 5px;*/
-    border-bottom: solid 5px #000;
+    border-bottom: solid 5px #990000;
 }
 
 #bdbHeader{
-    background-color: #990000;
+    background-color: #FFFFFF;
     height: 150px;
     line-height: 20px;
 }
@@ -45,20 +45,82 @@
 }
 
 .register-button:hover{
-    background-color: #fff3e6; !important;
+    background-color: #ffd633; !important;
 }
 
 .register-button{
     font-weight: bolder; !important;
-    background-color: #ffd633; !important;
-    color: #990000; !important;
+    background-color: #990000; !important;
+    color: #ffd633; !important;
     /*margin-top: -1px; !important;*/
     font-size: 17px; !important;
 }
 
-.home-images{
+.durga-banner{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #fff;
+    background-color: #990000;
+    font-family: fantasy;
+}
+
+.home-2-images{
+    width: 160px;
+    height: 200px;
+    border: 1px solid darkgray;
+    border-radius: 15px;
+}
+
+.home-2-images:hover{
+    width: 160px;
+    height: 200px;
+    border: 5px solid #FFF;
+    border-radius: 15px;
+}
+
+.home-3-images{
+    width: 250px;
+    height: 200px;
+    border: 1px solid darkgray;
+    border-radius: 15px;
+}
+
+.home-3-images:hover{
+    width: 250px;
+    height: 200px;
+    border: 5px solid #FFF;
+    border-radius: 15px;
+}
+
+.home-4-images{
     width: 350px;
     height: 200px;
+    border: 1px solid darkgray;
+    border-radius: 15px;
+}
+
+.home-4-images:hover{
+    width: 350px;
+    height: 200px;
+    border: 5px solid #FFF;
+    border-radius: 15px;
+}
+
+.home-6-images{
+    width: 500px;
+    height: 200px;
+    border: 1px solid darkgray;
+    border-radius: 15px;
+    /*box-shadow: 3px 3px 3px darkgray;*/
+}
+
+.home-6-images:hover{
+    width: 500px;
+    height: 200px;
+    border: 5px solid #FFF;
+    border-radius: 15px;
+    text-decoration: none;
 }
 
 .container{

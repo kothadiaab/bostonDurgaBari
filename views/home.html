@@ -6,64 +6,67 @@
     <title></title>
 </head>
 <body>
+    <P class="durga-banner">DURGOTSAV 2016</P>
     <div class="container">
         <div class="row our-vision-font">
-            <div class="col-sm-12" style="background-color: #FFF">
+            <div class="col-sm-12" style="background-color: #000">
                 <div>&nbsp;</div>
-                <div class="col-sm-4 text-center">
-                    <div>&nbsp;</div>
-                    <div>&nbsp;</div>
+                <div class="col-sm-3 text-center">
                     <a href="#/">
-                        <img src="images/durga_puja.jpg" alt="Angry Bird" class="home-images"/>
-                        <h3>DURGOTSAV 2016</h3>
+                        <img src="images/durga_puja.jpg" alt="Angry Bird" class="home-3-images"/>
+                        <p>PUJA</p>
                     </a>
                 </div>
-                <div class="col-sm-4 text-center">
+                <div class="col-sm-6 text-center">
                     <a href="#our-vision">
-                        <img src="images/jojo.jpeg" alt="Angry Bird" class="home-images"/>
-                        <h3>JOJO MUKHERJEE</h3>
+                        <img src="images/drama.jpg" alt="Angry Bird" class="home-6-images"/>
+                        <p style="color: #fff3e6; text-decoration: none">AN ORIGINAL PLAY WRITTEN AND DIRECTED BY<br/>JAYATI BANERJEE</p>
                     </a>
                 </div>
-                <div class="col-sm-4 text-center">
-                    <div>&nbsp;</div>
-                    <div>&nbsp;</div>
+                <div class="col-sm-3 text-center">
                     <a href="#event-ads">
-                        <img src="images/pujo-food.jpg" alt="Angry Bird" class="home-images"/>
-                        <h3>PUJO FOOD</h3>
+                        <img src="images/pujo-food.jpg" alt="Angry Bird" class="home-3-images"/>
+                        <p>FOOD</p>
                     </a>
                 </div>
+                <div>&nbsp;</div>
             </div>
-            <div class="col-sm-12" style="background-color: #FFF">
-                    <div class="col-sm-4 text-center">
-                        <div>&nbsp;</div>
-                        <div>&nbsp;</div>
-                        <a href="#contact-us">
-                            <img src="images/durga-maa_1.jpeg" alt="Angry Bird" class="home-images"/>
-                            <h4>Placeholders</h4>
-                        </a>
-                    </div>
-                <div class="col-sm-4 text-center">
-
-                    <img src="images/dhol.png" alt="Angry Bird" style="width: 350px; height: 300px"/>
+            <div class="col-sm-12" style="background-color: #000">
+                <div class="col-sm-3 text-center">
+                    <a href="#contact-us">
+                        <img src="images/dhol.png" alt="Angry Bird" class="home-3-images"/>
+                        <p>CLASSICAL MUSIC BY<br/>ADITYA SHAH</p>
+                    </a>
+                </div>
+                <div class="col-sm-2 text-center">
+                    <a href="#contact-us">
+                        <img src="images/odissi.jpg" alt="Angry Bird" class="home-2-images"/>
+                        <p>ODISSI DANCE BY SHAMOYITA</p>
+                    </a>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <div>&nbsp;</div>
-                    <div>&nbsp;</div>
                     <a href="#contact-us">
-                        <img src="images/durga-maa.jpg" alt="Angry Bird" class="home-images"/>
-                        <h4>Placeholders</h4>
+                        <img src="images/jojo.png" alt="Angry Bird" class="home-4-images"/>
+                        <p>MISS JOJO - LIVE IN CONCERT</p>
+                    </a>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <a href="#contact-us">
+                        <img src="images/dhol.png" alt="Angry Bird" class="home-3-images"/>
+                        <p>SHUDDHASWAR BY<br/>SHANTA NAG</p>
                     </a>
                 </div>
                 <div class="col-sm-12">&nbsp;</div>
             </div>
             <div class="col-sm-12">&nbsp;</div>
-            <div class="col-sm-8">
+            <div class="col-sm-8" ng-init="tab = 1">
                     <ul class="nav nav-tabs">
-                        <li role="presentation" class="active"><a href="#day1" data-toggle="tab">Day 1</a></li>
-                        <li role="presentation"><a href="#day2" data-toggle="tab">Day 2</a></li>
+                        <li role="presentation" class="active"><a href ng-click="tab = 1" data-toggle="tab">Oct 01</a></li>
+                        <li role="presentation"><a href ng-click="tab = 2" data-toggle="tab">Oct 02</a></li>
+                        <li role="presentation"><a href ng-click="tab = 3" data-toggle="tab">Venue</a></li>
                     </ul>
                     <div class="tab-content">
-                        <div id="day1" class="tab-pane fade in active">
+                        <div id="day1" class="tab-pane fade in active" ng-show="tab == 1">
                             <div>&nbsp;</div>
                             <h4>
                                 <p>Day 1 Activities</p>
@@ -119,10 +122,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="day2" class="tab-pane fade" style="background-color: greenyellow">
+                        <div id="day2" class="tab-pane fade" style="background-color: greenyellow" ng-show="tab == 2">
                             <div>&nbsp;</div>
                             <h3 style="margin-top: 0px;">Day 2</h3>
                             <p>This is content for tab 2</p>
+                        </div>
+                        <div id="venue-map" class="tab-pane fade" ng-show="tab == 3">
+                            <div>&nbsp;</div>
+                            <h3 style="margin-top: 0px;">Venue Map</h3>
+                            <p>This is content for tab 3</p>
                         </div>
                     </div>
             </div>
