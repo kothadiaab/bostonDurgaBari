@@ -11,7 +11,7 @@
         <div class="row our-vision-font">
             <div class="col-sm-12" style="background-color: #000">
                 <div>&nbsp;</div>
-                <a href="#/">
+                <a href ng-click="hCtrl.setTab(1)" ng-class="{active:hCtrl.isSet(1)}" id="image_puja">
                     <div class="col-sm-3 text-center">
                         <img src="images/durga_puja.jpg" alt="Angry Bird" class="home-3-images"/>
                         <p class="image-text">PUJA</p>
@@ -23,7 +23,7 @@
                         <p class="image-text">AN ORIGINAL PLAY BY JAYATI BANERJEE</p>
                     </div>
                 </a>
-                <a href="#event-ads">
+                <a href ng-click="hCtrl.setTab(1)" ng-class="{active:hCtrl.isSet(1)}" id="image_food">
                     <div class="col-sm-3 text-center">
                         <img src="images/pujo-food.jpg" alt="Angry Bird" class="home-3-images"/>
                         <p class="image-text">FOOD</p>
@@ -146,4 +146,5 @@
         </div>
     </div>
 </body>
+<script type="text/javascript" src="js/script.js"></script>
 </html>

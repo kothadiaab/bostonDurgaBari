@@ -47,3 +47,13 @@ bdbApp.controller('homeController', function($scope){
         return this.hCtrl === tabId;
     };
 });
+
+$("#image_puja").click(function(){
+    $("#day1Puja").addClass("in");
+    $("#day1Food").removeClass("in");
+});
+
+$("#image_food").click(function(){
+    $("#day1Food").addClass("in");
+    $("#day1Puja").removeClass("in");
+});
