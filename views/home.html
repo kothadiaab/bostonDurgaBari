@@ -11,21 +11,21 @@
         <div class="row our-vision-font">
             <div class="col-sm-12" style="background-color: #000">
                 <div>&nbsp;</div>
-                <a href ng-click="hCtrl.setTab(1)" ng-class="{active:hCtrl.isSet(1)}" id="image_puja">
+                <a href="#/" ng-click="hCtrl.setTab(1)" ng-class="{active:hCtrl.isSet(1)}" id="image_puja">
                     <div class="col-sm-3 text-center">
                         <img src="images/durga_puja.jpg" alt="Angry Bird" class="home-3-images"/>
                         <p class="image-text">PUJA</p>
                     </div>
                 </a>
-                <a href="#our-vision">
+                <a href="#drama_checked_in">
                     <div class="col-sm-6 text-center">
-                        <img src="images/drama.jpg" alt="Angry Bird" class="home-6-images"/>
-                        <p class="image-text">AN ORIGINAL PLAY BY JAYATI BANERJEE</p>
+                        <img src="images/drama_checked_in.jpg" alt="Angry Bird" class="home-6-images"/>
+                        <p class="image-text">DRAMA: CHECKED IN</p>
                     </div>
                 </a>
-                <a href ng-click="hCtrl.setTab(1)" ng-class="{active:hCtrl.isSet(1)}" id="image_food">
+                <a href="#/" ng-click="hCtrl.setTab(1)" ng-class="{active:hCtrl.isSet(1)}" id="image_food">
                     <div class="col-sm-3 text-center">
-                        <img src="images/pujo-food.jpg" alt="Angry Bird" class="home-3-images"/>
+                        <img src="images/pujo_food.png" alt="Angry Bird" class="home-3-images"/>
                         <p class="image-text">FOOD</p>
                     </div>
                 </a>
@@ -34,13 +34,13 @@
             <div class="col-sm-12" style="background-color: #000">
                 <a href="#contact-us">
                     <div class="col-sm-3 text-center">
-                        <img src="images/dhol.png" alt="Angry Bird" class="home-3-images"/>
+                        <img src="images/amit_shah.jpg" alt="Angry Bird" class="home-3-images"/>
                         <p class="image-text">CLASSICAL MUSIC BY<br/>ADITYA SHAH</p>
                     </div>
                 </a>
                 <a href="#contact-us">
                     <div class="col-sm-2 text-center">
-                        <img src="images/odissi.jpg" alt="Angry Bird" class="home-2-images"/>
+                        <img src="images/Shamoyita-Odissi.jpg" alt="Angry Bird" class="home-2-images"/>
                         <p class="image-text">ODISSI DANCE BY SHAMOYITA</p>
                     </div>
                 </a>
@@ -52,7 +52,7 @@
                 </a>
                 <a href="#contact-us">
                     <div class="col-sm-3 text-center">
-                        <img src="images/dhol.png" alt="Angry Bird" class="home-3-images"/>
+                        <img src="images/shuddhaswar.jpg" alt="Angry Bird" class="home-3-images"/>
                         <p class="image-text">SHUDDHASWAR BY<br/>SHANTA NAG</p>
                     </div>
                 </a>
@@ -61,14 +61,14 @@
             <div class="col-sm-12">&nbsp;</div>
             <div class="col-sm-8">
                 <ul class="nav nav-tabs">
-                    <li role="presentation" ng-class="{active:hCtrl.isSet(1)}"><a href ng-click="hCtrl.setTab(1)" data-toggle="tab"><span class="glyphicon glyphicon-calendar"></span> October 01</a></li>
-                    <li role="presentation" ng-class="{active:hCtrl.isSet(2)}"><a href ng-click="hCtrl.setTab(2)" data-toggle="tab"><span class="glyphicon glyphicon-calendar"></span> October 02</a></li>
-                    <li role="presentation" ng-class="{active:hCtrl.isSet(3)}"><a href ng-click="hCtrl.setTab(3)" data-toggle="tab"><span class="glyphicon glyphicon-map-marker"></span> Venue</a></li>
+                    <li role="presentation" ng-class="{active:hCtrl.isSet(1)}"><a href ng-click="hCtrl.setTab(1)" data-toggle="tab" class="nav-tab-prop"><span class="glyphicon glyphicon-calendar"></span> October 01</a></li>
+                    <li role="presentation" ng-class="{active:hCtrl.isSet(2)}"><a href ng-click="hCtrl.setTab(2)" data-toggle="tab" class="nav-tab-prop"><span class="glyphicon glyphicon-calendar"></span> October 02</a></li>
+                    <li role="presentation" ng-class="{active:hCtrl.isSet(3)}"><a href ng-click="hCtrl.setTab(3)" data-toggle="tab" class="nav-tab-prop"><span class="glyphicon glyphicon-map-marker"></span> Venue</a></li>
                 </ul>
-                <div ng-show="hCtrl.isSet(1)">
+                <div ng-show="hCtrl.isSet(1)" class="october1-tab col-sm-12">
                     <div id="day1">
                         <div>&nbsp;</div>
-                        <h3 style="margin-top: 0px;">Day 1</h3>
+                        <h3 style="margin-top: 0px;">October 1</h3>
                         <div class="panel-group" id="accordion">
                             <div class="panel panel-default">
                                 <div class="panel-heading" data-toggle="collapse" data-target="#day1Puja">
@@ -121,30 +121,119 @@
                         </div>
                     </div>
                 </div>
-                <div ng-show="hCtrl.isSet(2)">
+                <div ng-show="hCtrl.isSet(2)" class="october2-tab col-sm-12">
                     <div id="day2">
                         <div>&nbsp;</div>
-                        <h3 style="margin-top: 0px;">Day 2</h3>
-                        <p>This is content for tab 2</p>
+                        <h3 style="margin-top: 0px;">October 2</h3>
+                        <div class="panel-group" id="accordion2">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" data-target="#day2Puja">
+                                    <h4 class="panel-title collapsed" data-toggle="collapse" data-target="#day2Puja">
+                                        Puja
+                                    </h4>
+                                </div>
+                                <div id="day2Puja" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Puja Accordion Content</p><br/>
+                                        <p>Puja Accordion Content</p><br/>
+                                        <p>Puja Accordion Content</p><br/>
+                                        <p>Puja Accordion Content</p><br/>
+                                        <p>Puja Accordion Content</p><br/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" data-target="#day2Food">
+                                    <h4 class="panel-title collapsed" data-toggle="collapse" data-target="#day2Food">
+                                        Food
+                                    </h4>
+                                </div>
+                                <div id="day2Food" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Food Accordion Content</p><br/>
+                                        <p>Food Accordion Content</p><br/>
+                                        <p>Food Accordion Content</p><br/>
+                                        <p>Food Accordion Content</p><br/>
+                                        <p>Food Accordion Content</p><br/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" data-target="#day2Culture">
+                                    <h4 class="panel-title collapsed" data-toggle="collapse" data-target="#day2Culture">
+                                        Culture
+                                    </h4>
+                                </div>
+                                <div id="day2Culture" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Culture Accordion Content</p><br/>
+                                        <p>Culture Accordion Content</p><br/>
+                                        <p>Culture Accordion Content</p><br/>
+                                        <p>Culture Accordion Content</p><br/>
+                                        <p>Culture Accordion Content</p><br/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div ng-show="hCtrl.isSet(3)">
+                <div ng-show="hCtrl.isSet(3)" class="venue-tab col-sm-12">
                     <div id="venue-map">
                         <div>&nbsp;</div>
-                        <h3 style="margin-top: 0px;">Venue Map</h3>
-                        <p>This is content for tab 3</p>
+                        <h3 style="margin-top: 0px;">Venue</h3>
+                        <p>SOUTH MIDDLE SCHOOL, 232 Peach St, Braintree, MA 02184</p>
+                        <div id="map"></div>
+                        <div>&nbsp;</div>
+                    </div>
+                </div>
+                <div>&nbsp;</div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12 table-bordered text-center" style="background-color: #fff">
+                    <div>&nbsp;</div>
+                    <p style="background-color: #cc0000; color: #fff; padding: 10px">IMAGES</p>
+                    <div>&nbsp;</div>
+                    <div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="images/dhaaki.png" alt="" style="width: 100px; height: 100px"/>
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="images/dhaaki.png" alt="" style="width: 100px; height: 100px"/>
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="images/dhaaki.png" alt="" style="width: 100px; height: 100px"/>
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="images/dhaaki.png" alt="" style="width: 100px; height: 100px"/>
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="images/dhaaki.png" alt="" style="width: 100px; height: 100px"/>
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="images/dhaaki.png" alt="" style="width: 100px; height: 100px"/>
+                            </div>
+                            <div>&nbsp;</div>
+                        </div>
+                        <div>&nbsp;</div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 table-bordered">
-                <div class="col-sm-12">
-                    <p>
-                        This is side nav bar
-                    </p>
-                </div>
-            </div>
+            <div>&nbsp;</div>
         </div>
     </div>
 </body>
 <script type="text/javascript" src="js/script.js"></script>
+<script>
+    function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+            center: {lat: 42.184154, lng: -70.997325},
+            zoom: 8
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMULPzZRXICYqzg_sDiXcMexUml01QcQk&callback=initMap">
+</script>
 </html>

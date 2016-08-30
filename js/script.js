@@ -30,6 +30,9 @@ bdbApp.config(function($routeProvider) {
         .when('/our-events', {
             templateUrl : 'views/our-events.html'
         })
+        .when('/drama_checked_in', {
+            templateUrl : 'views/drama_checked_in.html'
+        })
 });
 
 bdbApp.controller('ourVisionController', function($scope) {

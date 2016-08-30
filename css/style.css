@@ -209,3 +209,38 @@
     color: #fff;
     font-family: sans-serif;
 }
+
+.nav-tab-prop{
+    background-color: #cc0000;
+    color: #fff;
+}
+
+.nav-tabs>li>a:hover{
+    color: #cc0000;
+}
+
+.october1-tab{
+    background-color: #FFFFFF;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.october2-tab{
+    background-color: #FFFFFF;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.venue-tab{
+    background-color: #FFFFFF;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+}
