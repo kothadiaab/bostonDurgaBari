@@ -46,6 +46,20 @@ bdbApp.controller('homeController', function($scope){
         this.hCtrl = tabId;
     };
 
+    $scope.initMap = function () {
+        var mapDiv = document.getElementById('map');
+        var myLatLng = {lat: 42.184154, lng: -70.997325};
+        var map = new google.maps.Map(mapDiv, {
+            center: myLatLng,
+            zoom: 12
+        });
+
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map
+        });
+    }
+
     this.isSet = function (tabId) {
         return this.hCtrl === tabId;
     };

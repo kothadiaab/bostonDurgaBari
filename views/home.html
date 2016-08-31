@@ -56,19 +56,19 @@
                         <p class="image-text">SHUDDHASWAR BY<br/>SHANTA NAG</p>
                     </div>
                 </a>
-                <div class="col-sm-12">&nbsp;</div>
+                <!--<div class="col-sm-12">&nbsp;</div>-->
             </div>
             <div class="col-sm-12">&nbsp;</div>
             <div class="col-sm-8">
                 <ul class="nav nav-tabs">
                     <li role="presentation" ng-class="{active:hCtrl.isSet(1)}"><a href ng-click="hCtrl.setTab(1)" data-toggle="tab" class="nav-tab-prop"><span class="glyphicon glyphicon-calendar"></span> October 01</a></li>
                     <li role="presentation" ng-class="{active:hCtrl.isSet(2)}"><a href ng-click="hCtrl.setTab(2)" data-toggle="tab" class="nav-tab-prop"><span class="glyphicon glyphicon-calendar"></span> October 02</a></li>
-                    <li role="presentation" ng-class="{active:hCtrl.isSet(3)}"><a href ng-click="hCtrl.setTab(3)" data-toggle="tab" class="nav-tab-prop"><span class="glyphicon glyphicon-map-marker"></span> Venue</a></li>
+                    <li role="presentation" ng-class="{active:hCtrl.isSet(3)}" ng-click="initMap()"><a href ng-click="hCtrl.setTab(3)" data-toggle="tab" class="nav-tab-prop"><span class="glyphicon glyphicon-map-marker"></span> Venue</a></li>
                 </ul>
                 <div ng-show="hCtrl.isSet(1)" class="october1-tab col-sm-12">
                     <div id="day1">
                         <div>&nbsp;</div>
-                        <h3 style="margin-top: 0px;">October 1</h3>
+                        <h3 style="margin-top: 0px;">October 1:</h3>
                         <div class="panel-group" id="accordion">
                             <div class="panel panel-default">
                                 <div class="panel-heading" data-toggle="collapse" data-target="#day1Puja">
@@ -76,7 +76,7 @@
                                         Puja
                                     </h4>
                                 </div>
-                                <div id="day1Puja" class="panel-collapse collapse">
+                                <div id="day1Puja" class="panel-collapse collapse in">
                                     <div class="panel-body">
                                         <p>Puja Accordion Content</p><br/>
                                         <p>Puja Accordion Content</p><br/>
@@ -124,7 +124,7 @@
                 <div ng-show="hCtrl.isSet(2)" class="october2-tab col-sm-12">
                     <div id="day2">
                         <div>&nbsp;</div>
-                        <h3 style="margin-top: 0px;">October 2</h3>
+                        <h3 style="margin-top: 0px;">October 2:</h3>
                         <div class="panel-group" id="accordion2">
                             <div class="panel panel-default">
                                 <div class="panel-heading" data-toggle="collapse" data-target="#day2Puja">
@@ -148,7 +148,7 @@
                                         Food
                                     </h4>
                                 </div>
-                                <div id="day2Food" class="panel-collapse collapse">
+                                <div id="day2Food" class="panel-collapse collapse in">
                                     <div class="panel-body">
                                         <p>Food Accordion Content</p><br/>
                                         <p>Food Accordion Content</p><br/>
@@ -180,7 +180,7 @@
                 <div ng-show="hCtrl.isSet(3)" class="venue-tab col-sm-12">
                     <div id="venue-map">
                         <div>&nbsp;</div>
-                        <h3 style="margin-top: 0px;">Venue</h3>
+                        <h3 style="margin-top: 0px;">Venue:</h3>
                         <p>SOUTH MIDDLE SCHOOL, 232 Peach St, Braintree, MA 02184</p>
                         <div id="map"></div>
                         <div>&nbsp;</div>
@@ -190,8 +190,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="col-sm-12 table-bordered text-center" style="background-color: #fff">
-                    <div>&nbsp;</div>
-                    <p style="background-color: #cc0000; color: #fff; padding: 10px">IMAGES</p>
+                    <h4 style="background-color: #cc0000; color: #fff; padding: 10px"><span class="glyphicon glyphicon-picture"></span> Images</h4>
                     <div>&nbsp;</div>
                     <div>
                         <div class="row">
@@ -224,15 +223,6 @@
     </div>
 </body>
 <script type="text/javascript" src="js/script.js"></script>
-<script>
-    function initMap() {
-        var mapDiv = document.getElementById('map');
-        var map = new google.maps.Map(mapDiv, {
-            center: {lat: 42.184154, lng: -70.997325},
-            zoom: 8
-        });
-    }
-</script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMULPzZRXICYqzg_sDiXcMexUml01QcQk&callback=initMap">
 </script>
