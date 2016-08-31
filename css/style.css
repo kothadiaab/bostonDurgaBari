@@ -211,12 +211,12 @@
 }
 
 .nav-tab-prop{
-    background-color: #cc0000;
+    background-color: #990000;
     color: #fff;
 }
 
 .nav-tabs>li>a:hover{
-    color: #cc0000;
+    color: #990000;
 }
 
 .october1-tab{
@@ -243,4 +243,20 @@
 #map {
     width: 100%;
     height: 400px;
+}
+
+.sidebar-image-grid{
+    width: 80px;
+    height: 80px;
+    border: solid 1px darkgray;
+}
+
+.sidebar-image-grid:hover{
+    border: solid 3px #000;
+}
+
+#sideImageList{
+    font-size: 0px;
+    margin: 0 auto;
+    width: 320px;
 }
