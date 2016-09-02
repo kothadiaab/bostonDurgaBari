@@ -263,8 +263,8 @@
 
 .accordian-header{
     border-radius: 5px;
-    background-color: #990000;
-    color: #ffd633;
+    background-color: #ffd633;
+    color: #000000;
     padding: 10px;
     /* font-style: italic; */
     font-family: fantasy;
