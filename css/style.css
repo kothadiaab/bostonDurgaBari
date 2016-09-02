@@ -248,15 +248,24 @@
 .sidebar-image-grid{
     width: 80px;
     height: 80px;
-    border: solid 1px darkgray;
+    border: solid 1px #FFFFFF;
 }
 
 .sidebar-image-grid:hover{
-    border: solid 3px #000;
+    border: solid 3px #000000;
 }
 
 #sideImageList{
     font-size: 0px;
     margin: 0 auto;
     width: 320px;
+}
+
+.accordian-header{
+    border-radius: 5px;
+    background-color: #990000;
+    color: #ffd633;
+    padding: 10px;
+    /* font-style: italic; */
+    font-family: fantasy;
 }
