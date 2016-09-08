@@ -33,6 +33,9 @@ bdbApp.config(function($routeProvider) {
         .when('/drama_checked_in', {
             templateUrl : 'views/drama_checked_in.html'
         })
+        .when('/paypal-register', {
+            templateUrl : 'views/register.html'
+        })
 });
 
 bdbApp.controller('ourVisionController', function($scope) {

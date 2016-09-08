@@ -44,8 +44,9 @@
     width: 170px;
 }
 
-.register-button:hover{
-    background-color: #ffd633; !important;
+.register-button a:hover{
+    /*background-color: #ffd633; !important;*/
+    color: #ffd633; !important;
 }
 
 .register-button{
@@ -54,6 +55,10 @@
     color: #ffd633; !important;
     /*margin-top: -1px; !important;*/
     font-size: 17px; !important;
+}
+
+.register-button a{
+    color: #FFFFFF  ;
 }
 
 .durga-banner{

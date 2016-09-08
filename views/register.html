@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div class="jumbotron text-center">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="CFP3UVEBWEQXW">
+        <br>
+        <br>
+        <br>
+        <br>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+
+            }
+            th, td {
+                padding: 5px;
+                text-align: center;
+            }
+            table#t01 {
+                width: 50%;
+                background-color: #f1f1c1;
+            }
+            table#t02 {
+                width: 50%;
+                background-color: #f1f1c1;
+            }
+        </style>
+
+
+        <table id="t01">
+            <tr>
+                <td colspan=3>
+                    <h1>Subscription Prices</h1><br>
+                    <h4>
+                </td>
+            </tr>
+        </table>
+        <table id="t02">
+            <tr>
+                <th></th>
+                <th>One Day</th>
+                <th>Both Days</th>
+            </tr>
+            <tr>
+                <th>Single</th>
+                <td>$50.00</td>
+                <td>$90.00</td>
+            </tr>
+            <tr>
+
+                <th>Family</th>
+                <td>$80.00</td>
+                <td>$120.00</td>
+            </tr>
+            <tr>
+
+                <th>Additional Kid</th>
+                <td>$20.00</td>
+                <td>$30.00</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <table>
+            <tr><th style="background-color: #f1f1c1"><input type="hidden" name="on0" value="Tickets">Buy Tickets Now</th></tr><tr><td><select name="os0">
+            <option value="1 day - Single">1 day - Single $50.00 USD</option>
+            <option value="2 day - Single">2 day - Single $90.00 USD</option>
+            <option value="1 day - Family (2 Adults + 1 kid">1 day - Family (2 Adults + 1 kid $80.00 USD</option>
+            <option value="2 day - Family (2 Adults + 1 kid">2 day - Family (2 Adults + 1 kid $120.00 USD</option>
+            <option value="1 day - Additional kid">1 day - Additional kid $20.00 USD</option>
+            <option value="2 day - Additional kid">2 day - Additional kid $30.00 USD</option>
+            <option value="JoJo's Concert (Dinner excluded)">JoJo's Concert (Dinner excluded) $20.00 USD</option>
+            <option value="JoJo's Concert (Dinner included)">JoJo's Concert (Dinner included) $30.00 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+
+
+</div>
+</body>
+</html>
