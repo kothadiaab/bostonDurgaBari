@@ -11,7 +11,7 @@
         <div class="row our-vision-font">
             <div class="col-sm-12" style="background-color: #000">
                 <div>&nbsp;</div>
-                <a href="#/" ng-click="hCtrl.setTab(1)" ng-class="{active:hCtrl.isSet(1)}" id="image_puja">
+                <a href="" ng-click="hCtrl.goToEvent('day1Puja'); hCtrl.setTab(1);" ng-class="{active:hCtrl.isSet(1)}" id="image_puja">
                     <div class="col-sm-3 text-center">
                         <img src="images/durga_puja.jpg" alt="Angry Bird" class="home-3-images"/>
                         <p class="image-text">PUJA</p>
@@ -23,7 +23,7 @@
                         <p class="image-text">DRAMA: CHECKED-IN</p>
                     </div>
                 </a>
-                <a href="#/" ng-click="hCtrl.setTab(1)" ng-class="{active:hCtrl.isSet(1)}" id="image_food">
+                <a href="" ng-click="hCtrl.goToEvent('day1Food'); hCtrl.setTab(1);" ng-class="{active:hCtrl.isSet(1)}" id="image_food">
                     <div class="col-sm-3 text-center">
                         <img src="images/pujo_food.png" alt="Angry Bird" class="home-3-images"/>
                         <p class="image-text">FOOD</p>
@@ -32,13 +32,13 @@
                 <div>&nbsp;</div>
             </div>
             <div class="col-sm-12" style="background-color: #000">
-                <a href="#contact-us">
+                <a href="" ng-click="hCtrl.goToEvent('day1Culture'); hCtrl.setTab(1);" ng-class="{active:hCtrl.isSet(1)}" id="image_classical">
                     <div class="col-sm-3 text-center">
                         <img src="images/amit_shah.jpg" alt="Angry Bird" class="home-3-images"/>
                         <p class="image-text">CLASSICAL MUSIC BY<br/>ADITYA SHAH</p>
                     </div>
                 </a>
-                <a href="#contact-us">
+                <a href="" ng-click="hCtrl.goToEvent('day1Culture'); hCtrl.setTab(1);" ng-class="{active:hCtrl.isSet(1)}" id="image_odissi">
                     <div class="col-sm-2 text-center">
                         <img src="images/Shamoyita-Odissi.jpg" alt="Angry Bird" class="home-2-images"/>
                         <p class="image-text">ODISSI DANCE BY SHAMOYITA</p>
@@ -50,7 +50,7 @@
                         <p class="image-text">MISS JOJO <br/>LIVE IN CONCERT</p>
                     </div>
                 </a>
-                <a href="#contact-us">
+                <a href="" ng-click="hCtrl.goToEvent('day2Culture'); hCtrl.setTab(2);" ng-class="{active:hCtrl.isSet(2)}" id="image_shuddhaswar">
                     <div class="col-sm-3 text-center">
                         <img src="images/shuddhaswar.jpg" alt="Angry Bird" class="home-3-images"/>
                         <p class="image-text">SHUDDHASWAR BY<br/>SHANTA NAG</p>
@@ -71,7 +71,7 @@
                         <h3 style="margin-top: 0px;">October 1:</h3>
                         <div class="panel-group" id="accordion">
                             <div class="panel panel-default">
-                                <div class="panel-heading" data-toggle="collapse" data-target="#day1Puja" style="background-color: #000000; color: #FFFFFF">
+                                <div class="panel-heading" data-toggle="collapse" data-target="#day1Puja" style="background-color: #ffd633; color: #000">
                                     <h4 class="panel-title collapsed" data-toggle="collapse" data-target="#day1Puja">
                                         Puja
                                     </h4>
@@ -109,23 +109,44 @@
                                 </div>
                             </div>
                             <div class="panel panel-default">
-                                <div class="panel-heading" data-toggle="collapse" data-target="#day1Food" style="background-color: #000000; color: #FFFFFF">
+                                <div class="panel-heading" data-toggle="collapse" data-target="#day1Food" style="background-color: #ffd633; color: #000">
                                     <h4 class="panel-title collapsed" data-toggle="collapse" data-target="#day1Food">
                                         Food
                                     </h4>
                                 </div>
                                 <div id="day1Food" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>Food Accordion Content</p><br/>
-                                        <p>Food Accordion Content</p><br/>
-                                        <p>Food Accordion Content</p><br/>
-                                        <p>Food Accordion Content</p><br/>
-                                        <p>Food Accordion Content</p><br/>
+                                        <div class="col-sm-12">
+                                            <h3 class="accordian-header"><span class="glyphicon glyphicon-leaf"></span>	 Lunch Menu</h3>
+                                            <div class="col-sm-12">
+                                                <ul>
+                                                    <li>Khichdi</li>
+                                                    <li>Puri</li>
+                                                    <li>Beguni/Vegetable Pakora/Cut Mirch</li>
+                                                    <li>Aloo Dum or Mix veg curry</li>
+                                                    <li>Aloo Gobi Peas Fry or Paneer butter Masala</li>
+                                                    <li>Kheer</li>
+                                                    <li>Chutney</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <h3 class="accordian-header"><span class="glyphicon glyphicon-apple"></span>	 Dinner Menu</h3>
+                                            <div class="col-sm-12">
+                                                <ul>
+                                                    <li>Rice & Naan</li>
+                                                    <li>Veg Curry (Navratan Korma)</li>
+                                                    <li>Fish Curry</li>
+                                                    <li>Special Veg Curry (Paneer)</li>
+                                                    <li>Rasgulla</li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="panel panel-default">
-                                <div class="panel-heading" data-toggle="collapse" data-target="#day1Culture" style="background-color: #000000; color: #FFFFFF">
+                                <div class="panel-heading" data-toggle="collapse" data-target="#day1Culture" style="background-color: #ffd633; color: #000">
                                     <h4 class="panel-title collapsed" data-toggle="collapse" data-target="#day1Culture">
                                         Culture
                                     </h4>
@@ -168,7 +189,7 @@
                         <h3 style="margin-top: 0px;">October 2:</h3>
                         <div class="panel-group" id="accordion2">
                             <div class="panel panel-default">
-                                <div class="panel-heading" data-toggle="collapse" data-target="#day2Puja" style="background-color: #000000; color: #FFFFFF">
+                                <div class="panel-heading" data-toggle="collapse" data-target="#day2Puja" style="background-color: #ffd633; color: #000">
                                     <h4 class="panel-title collapsed" data-toggle="collapse" data-target="#day2Puja">
                                         Puja
                                     </h4>
@@ -204,23 +225,43 @@
                                 </div>
                             </div>
                             <div class="panel panel-default">
-                                <div class="panel-heading" data-toggle="collapse" data-target="#day2Food" style="background-color: #000000; color: #FFFFFF">
+                                <div class="panel-heading" data-toggle="collapse" data-target="#day2Food" style="background-color: #ffd633; color: #000">
                                     <h4 class="panel-title collapsed" data-toggle="collapse" data-target="#day2Food">
                                         Food
                                     </h4>
                                 </div>
                                 <div id="day2Food" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>Food Accordion Content</p><br/>
-                                        <p>Food Accordion Content</p><br/>
-                                        <p>Food Accordion Content</p><br/>
-                                        <p>Food Accordion Content</p><br/>
-                                        <p>Food Accordion Content</p><br/>
+                                        <div class="col-sm-12">
+                                            <h3 class="accordian-header"><span class="glyphicon glyphicon-leaf"></span>	 Lunch Menu</h3>
+                                            <div class="col-sm-12">
+                                                <ul>
+                                                    <li>Rice and Naan</li>
+                                                    <li>Veg Biryani</li>
+                                                    <li>Chicken Biryani</li>
+                                                    <li>Goat Curry</li>
+                                                    <li>Paneer Tikka Masala</li>
+                                                    <li>Gulab Jamun</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <h3 class="accordian-header"><span class="glyphicon glyphicon-apple"></span>	 Dinner Menu</h3>
+                                            <div class="col-sm-12">
+                                                <ul>
+                                                    <li>Rice & Naan</li>
+                                                    <li>Fried Rice</li>
+                                                    <li>Chilli Chicken</li>
+                                                    <li>Chilli Paneer</li>
+                                                    <li>Gajar Halwa</li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="panel panel-default">
-                                <div class="panel-heading" data-toggle="collapse" data-target="#day2Culture" style="background-color: #000000; color: #FFFFFF">
+                                <div class="panel-heading" data-toggle="collapse" data-target="#day2Culture" style="background-color: #ffd633; color: #000">
                                     <h4 class="panel-title collapsed" data-toggle="collapse" data-target="#day2Culture">
                                         Culture
                                     </h4>

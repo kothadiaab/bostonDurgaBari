@@ -4,7 +4,7 @@
 }
 .header-section{
     margin-top: 55px;
-    font-size: 20px;
+    font-size: 22px;
     font-family: sans-serif;
     font-weight: bolder;
 }
@@ -263,8 +263,8 @@
 
 .accordian-header{
     border-radius: 5px;
-    background-color: #ffd633;
-    color: #000000;
+    background-color: #000000;
+    color: #ffd633;
     padding: 10px;
     /* font-style: italic; */
     font-family: fantasy;
