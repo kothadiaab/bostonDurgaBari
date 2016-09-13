@@ -4,7 +4,7 @@
 }
 .header-section{
     margin-top: 55px;
-    font-size: 22px;
+    font-size: 30px;
     font-family: sans-serif;
     font-weight: bolder;
 }
@@ -256,6 +256,12 @@
     border: solid 1px #FFFFFF;
 }
 
+.sidebar-image-grid-drama{
+    width: 320px;
+    height: 250px;
+    border: solid 1px #FFFFFF;
+}
+
 .sidebar-image-grid:hover{
     border: solid 3px #000000;
 }
@@ -272,5 +278,16 @@
     color: #ffd633;
     padding: 10px;
     /* font-style: italic; */
-    font-family: fantasy;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.accordian-time{
+    /*border-radius: 5px;*/
+    background-color: #990000;
+    color: #ffffff;
+    width: 175px;
+    padding: 10px;
+    float: right;
+    /* font-style: italic; */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
