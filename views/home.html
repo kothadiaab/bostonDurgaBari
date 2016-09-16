@@ -11,7 +11,7 @@
         <div class="row our-vision-font">
             <div class="col-sm-12" style="background-color: #000">
                 <div>&nbsp;</div>
-                <a href="" ng-click="hCtrl.goToEvent('day1Puja'); hCtrl.setTab(1);" ng-class="{active:hCtrl.isSet(1)}" id="image_puja">
+                <a href="" ng-click="hCtrl.setTab(1); hCtrl.goToEvent('day1Puja');" ng-class="{active:hCtrl.isSet(1)}" id="image_puja">
                     <div class="col-sm-3 text-center">
                         <img src="images/durga_puja.jpg" alt="Angry Bird" class="home-3-images"/>
                         <p class="image-text">PUJA</p>
@@ -23,7 +23,7 @@
                         <p class="image-text">DRAMA: CHECKED-IN</p>
                     </div>
                 </a>
-                <a href="" ng-click="hCtrl.goToEvent('day1Food'); hCtrl.setTab(1);" ng-class="{active:hCtrl.isSet(1)}" id="image_food">
+                <a href="" ng-click="hCtrl.setTab(1); hCtrl.goToEvent('day1Food');" ng-class="{active:hCtrl.isSet(1)}" id="image_food">
                     <div class="col-sm-3 text-center">
                         <img src="images/pujo_food.png" alt="Angry Bird" class="home-3-images"/>
                         <p class="image-text">FOOD</p>
@@ -32,25 +32,25 @@
                 <div>&nbsp;</div>
             </div>
             <div class="col-sm-12" style="background-color: #000">
-                <a href="" ng-click="hCtrl.goToEvent('day1Culture'); hCtrl.setTab(1);" ng-class="{active:hCtrl.isSet(1)}" id="image_classical">
+                <a href="" ng-click="hCtrl.setTab(1); hCtrl.goToEvent('odissi_dance');" ng-class="{active:hCtrl.isSet(1)}" id="image_odissi">
                     <div class="col-sm-3 text-center">
-                        <img src="images/amit_shah.jpg" alt="Angry Bird" class="home-3-images"/>
-                        <p class="image-text">CLASSICAL MUSIC BY<br/>ADITYA SHAH</p>
+                        <img src="images/Shamoyita-Odissi.jpg" alt="Angry Bird" class="home-3-images"/>
+                        <p class="image-text">ODISSI DANCE BY SHAMOYITA MUKHERJEE</p>
                     </div>
                 </a>
-                <a href="" ng-click="hCtrl.goToEvent('day1Culture'); hCtrl.setTab(1);" ng-class="{active:hCtrl.isSet(1)}" id="image_odissi">
+                <a href="" ng-click="hCtrl.setTab(1); hCtrl.goToEvent('classical_music');" ng-class="{active:hCtrl.isSet(1)}" id="image_classical">
                     <div class="col-sm-2 text-center">
-                        <img src="images/Shamoyita-Odissi.jpg" alt="Angry Bird" class="home-2-images"/>
-                        <p class="image-text">ODISSI DANCE BY SHAMOYITA</p>
+                        <img src="images/amit_shah.jpg" alt="Angry Bird" class="home-2-images"/>
+                        <p class="image-text">CLASSICAL MUSIC BY ADITYA SHAH</p>
                     </div>
                 </a>
-                <a href="#jojo-concert" ng-click="hCtrl.goToEvent('jojoConcert');">
+                <a href="#jojo-concert">
                     <div class="col-sm-4 text-center">
                         <img src="images/jojo.png" alt="Angry Bird" class="home-4-images"/>
                         <p class="image-text">MISS JOJO <br/>LIVE IN CONCERT</p>
                     </div>
                 </a>
-                <a href="" ng-click="hCtrl.goToEvent('day2Culture'); hCtrl.setTab(2);" ng-class="{active:hCtrl.isSet(2)}" id="image_shuddhaswar">
+                <a href="" ng-click="hCtrl.setTab(2); hCtrl.goToEvent('day2Culture');" ng-class="{active:hCtrl.isSet(2)}" id="image_shuddhaswar">
                     <div class="col-sm-3 text-center">
                         <img src="images/shuddhaswar.jpg" alt="Angry Bird" class="home-3-images"/>
                         <p class="image-text">SHUDDHASWAR BY<br/>SHANTA NAG</p>
@@ -114,7 +114,7 @@
                                         Food
                                     </h4>
                                 </div>
-                                <div id="day1Food" class="panel-collapse collapse">
+                                <div id="day1Food" class="panel-collapse collapse in">
                                     <div class="panel-body">
                                         <div class="col-sm-12">
                                             <h3 class="accordian-header"><span class="glyphicon glyphicon-leaf"></span>	 Lunch Menu</h3>
@@ -148,12 +148,12 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading" data-toggle="collapse" data-target="#day1Culture" style="background-color: #ffd633; color: #000">
                                     <h4 class="panel-title collapsed" data-toggle="collapse" data-target="#day1Culture">
-                                        Culture
+                                        Cultural Program
                                     </h4>
                                 </div>
-                                <div id="day1Culture" class="panel-collapse collapse">
+                                <div id="day1Culture" class="panel-collapse collapse in">
                                     <div class="panel-body">
-                                        <div class="col-sm-12">
+                                        <div class="col-sm-12" id="classical_music">
                                             <h3 class="accordian-header"><span class="glyphicon glyphicon-music"></span>	 Indian Classical music by Aditya Shah</h3>
                                             <h4 class="accordian-time">Start Time: 6pm</h4>
                                             <div class="col-sm-12">
@@ -164,13 +164,13 @@
                                             </div>
                                         </div>
                                         <div class="col-sm-12">
-                                            <h3 class="accordian-header"><span class="glyphicon glyphicon-cd"></span>	 Drama: Checked-In</h3>
+                                            <h3 class="accordian-header"><span class="glyphicon glyphicon-ok"></span>	 Drama: Checked-In</h3>
                                             <h4 class="accordian-time">Start Time: 7pm</h4>
                                             <div class="col-sm-12">
-                                                <p>We tease, we laugh, we follow, we vent out, we embrace , we reject but we can not ignore it . Social media has created an evolution in integrated social system and established a spider net of human network. “Checked –In “, an original play written and directed by Jayati Banerjee takes a non-critique and comical view towards human phycology and its adaptive capability under strong influence of social media.</p>
+                                                <p>We tease, we laugh, we follow, we vent out, we embrace , we reject but we can not ignore it . Social media has created an evolution in integrated social system and established a spider net of human network. “Checked –In “, an original play written and directed by Jayati Banerjee takes a non-critique and comical view towards human psychology and its adaptive capability under strong influence of social media.</p>
                                             </div>
                                         </div>
-                                        <div class="col-sm-12">
+                                        <div class="col-sm-12" id="odissi_dance">
                                             <h3 class="accordian-header"><span class="glyphicon glyphicon-cd"></span>	 Odissi Dance by Shamoyita</h3>
                                             <h4 class="accordian-time">Start Time: 8pm</h4>
                                             <div class="col-sm-12">
@@ -197,7 +197,7 @@
                                         Puja
                                     </h4>
                                 </div>
-                                <div id="day2Puja" class="panel-collapse collapse">
+                                <div id="day2Puja" class="panel-collapse collapse in">
                                     <div class="panel-body">
                                         <h3 class="accordian-header"><span class="glyphicon glyphicon-fire"></span>	 Day 2 Puja Detais</h3>
                                         <div class="col-sm-12">
@@ -266,10 +266,10 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading" data-toggle="collapse" data-target="#day2Culture" style="background-color: #ffd633; color: #000">
                                     <h4 class="panel-title collapsed" data-toggle="collapse" data-target="#day2Culture">
-                                        Culture
+                                        Cultural Program
                                     </h4>
                                 </div>
-                                <div id="day2Culture" class="panel-collapse collapse">
+                                <div id="day2Culture" class="panel-collapse collapse in">
                                     <div class="panel-body">
                                         <div class="col-sm-12">
                                             <h3 class="accordian-header"><span class="glyphicon glyphicon-music"></span>	 Shuddhaswar by Shanta Nag</h3>

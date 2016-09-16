@@ -14,7 +14,7 @@ bdbApp.config(function($routeProvider) {
     $routeProvider
         .when('/', {
             templateUrl : "views/home.html",
-            controller  : 'homeController',
+            controller  : 'bdbController',
             controllerAs: 'hCtrl'
         })
         .when('/our-vision', {
@@ -31,13 +31,17 @@ bdbApp.config(function($routeProvider) {
             templateUrl : 'views/our-events.html'
         })
         .when('/drama_checked_in', {
-            templateUrl : 'views/drama_checked_in.html'
+            templateUrl : 'views/drama_checked_in.html',
+            controller  : 'bdbController',
+            controllerAs: 'hCtrl'
         })
         .when('/paypal-register', {
             templateUrl : 'views/register.html'
         })
         .when('/jojo-concert', {
-            templateUrl : 'views/jojo_concert.html'
+            templateUrl : 'views/jojo_concert.html',
+            controller  : 'bdbController',
+            controllerAs: 'hCtrl'
         })
 });
 
@@ -49,11 +53,12 @@ bdbApp
     .run(['$anchorScroll', function($anchorScroll) {
         $anchorScroll.yOffset = 50;   // always scroll by 50 extra pixels
     }])
-    .controller('homeController', ['$anchorScroll', '$location', '$scope',
+    .controller('bdbController', ['$anchorScroll', '$location', '$scope',
     function($anchorScroll, $location, $scope){
         this.hCtrl = 1;
 
         this.setTab = function (tabId) {
+            $location.path('/');
             this.hCtrl = tabId;
         };
 
@@ -82,6 +87,7 @@ bdbApp
                 // set the $location.hash to `newHash` and
                 // $anchorScroll will automatically scroll to it
                 $location.hash(x);
+                $anchorScroll();
             } else {
                 // call $anchorScroll() explicitly,
                 // since $location.hash hasn't changed
@@ -90,26 +96,26 @@ bdbApp
         }
     }]);
 
-$("#image_puja").click(function(){
-    $("#day1Puja").addClass("in");
-    $("#day1Food").removeClass("in");
-    $("#day1Culture").removeClass("in");
-});
-
-$("#image_food").click(function(){
-    $("#day1Food").addClass("in");
-    $("#day1Puja").removeClass("in");
-    $("#day1Culture").removeClass("in");
-});
-
-$("#image_classical, #image_odissi, #image_shuddhaswar").click(function(){
-    $("#day1Food").removeClass("in");
-    $("#day1Puja").removeClass("in");
-    $("#day1Culture").addClass("in");
-});
-
-$("#image_shuddhaswar").click(function(){
-    $("#day2Food").removeClass("in");
-    $("#day2Puja").removeClass("in");
-    $("#day2Culture").addClass("in");
-});
+// $("#image_puja").click(function(){
+//     $("#day1Puja").addClass("in");
+//     $("#day1Food").removeClass("in");
+//     $("#day1Culture").removeClass("in");
+// });
+//
+// $("#image_food").click(function(){
+//     $("#day1Food").addClass("in");
+//     $("#day1Puja").removeClass("in");
+//     $("#day1Culture").removeClass("in");
+// });
+//
+// $("#image_classical, #image_odissi, #image_shuddhaswar").click(function(){
+//     $("#day1Food").removeClass("in");
+//     $("#day1Puja").removeClass("in");
+//     $("#day1Culture").addClass("in");
+// });
+//
+// $("#image_shuddhaswar").click(function(){
+//     $("#day2Food").removeClass("in");
+//     $("#day2Puja").removeClass("in");
+//     $("#day2Culture").addClass("in");
+// });
