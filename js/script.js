@@ -38,6 +38,9 @@ bdbApp.config(function($routeProvider) {
         .when('/paypal-register', {
             templateUrl : 'views/register.html'
         })
+        .when('/retro-event', {
+            templateUrl : 'views/retro_event.html'
+        })
         .when('/jojo-concert', {
             templateUrl : 'views/jojo_concert.html',
             controller  : 'bdbController',

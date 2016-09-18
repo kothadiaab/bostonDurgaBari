@@ -4,7 +4,7 @@
 }
 .header-section{
     margin-top: 55px;
-    font-size: 28px;
+    font-size: 21px;
     font-family: sans-serif;
     font-weight: bolder;
 }
@@ -127,6 +127,14 @@
     border: 5px solid #FFF;
     border-radius: 15px;
     text-decoration: none;
+}
+
+.past-images{
+    width: 500px;
+    height: 300px;
+    border: 1px solid darkgray;
+    /*border-radius: 15px;*/
+    /*box-shadow: 3px 3px 3px darkgray;*/
 }
 
 .image-text{
