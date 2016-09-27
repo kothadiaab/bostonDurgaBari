@@ -18,8 +18,8 @@
                     </div>
                 </a>
                 <a href="#drama_checked_in">
-                    <div class="col-sm-6 text-center">
-                        <img src="images/drama_checked_in.jpg" alt="Angry Bird" class="home-6-images"/>
+                    <div class="col-sm-4 text-center">
+                        <img src="images/drama_checked_in.jpg" alt="Angry Bird" class="home-4-images"/>
                         <p class="image-text">DRAMA: CHECKED-IN</p>
                     </div>
                 </a>
@@ -29,13 +29,19 @@
                         <p class="image-text">FOOD</p>
                     </div>
                 </a>
+                <a href="" ng-click="hCtrl.setTab(2); hCtrl.goToEvent('sreeja_div');" ng-class="{active:hCtrl.isSet(2)}" id="sreeja_dance">
+                    <div class="col-sm-2 text-center">
+                        <img src="images/sreejana.jpeg" alt="Angry Bird" class="home-2-images"/>
+                        <p class="image-text">CLASSICAL DANCE BY SREEJA</p>
+                    </div>
+                </a>
                 <div>&nbsp;</div>
             </div>
             <div class="col-sm-12" style="background-color: #000">
                 <a href="" ng-click="hCtrl.setTab(1); hCtrl.goToEvent('odissi_dance');" ng-class="{active:hCtrl.isSet(1)}" id="image_odissi">
                     <div class="col-sm-3 text-center">
                         <img src="images/Shamoyita-Odissi.jpg" alt="Angry Bird" class="home-3-images"/>
-                        <p class="image-text">ODISSI DANCE BY SHAMOYITA MUKHERJEE</p>
+                        <p class="image-text">ODISSI DANCE BY SHAMOYITA MUKHERJEE AND GROUP</p>
                     </div>
                 </a>
                 <a href="" ng-click="hCtrl.setTab(1); hCtrl.goToEvent('classical_music');" ng-class="{active:hCtrl.isSet(1)}" id="image_classical">
@@ -50,7 +56,7 @@
                         <p class="image-text">MISS JOJO <br/>LIVE IN CONCERT</p>
                     </div>
                 </a>
-                <a href="" ng-click="hCtrl.setTab(2); hCtrl.goToEvent('day2Culture');" ng-class="{active:hCtrl.isSet(2)}" id="image_shuddhaswar">
+                <a href="" ng-click="hCtrl.setTab(2); hCtrl.goToEvent('suddhaswar_div');" ng-class="{active:hCtrl.isSet(2)}" id="image_shuddhaswar">
                     <div class="col-sm-3 text-center">
                         <img src="images/shuddhaswar.jpg" alt="Angry Bird" class="home-3-images"/>
                         <p class="image-text">SHUDDHASWAR BY<br/>SHANTA NAG</p>
@@ -167,14 +173,15 @@
                                             <h3 class="accordian-header"><span class="glyphicon glyphicon-ok"></span>	 Drama: Checked-In</h3>
                                             <h4 class="accordian-time">Start Time: 7pm</h4>
                                             <div class="col-sm-12">
-                                                <p>We tease, we laugh, we follow, we vent out, we embrace , we reject but we can not ignore it . Social media has created an evolution in integrated social system and established a spider net of human network. “Checked –In “, an original play written and directed by Jayati Banerjee takes a non-critique and comical view towards human psychology and its adaptive capability under strong influence of social media.</p>
+                                                <p>We tease, we laugh, we follow, we vent out, we embrace, we reject but we can not ignore it . Social media has created an evolution in integrated social system and established a spider net of human network. “Checked –In “, an original play written and directed by Jayati Banerjee takes a non-critique and comical view towards human psychology and its adaptive capability under strong influence of social media.</p>
                                             </div>
                                         </div>
                                         <div class="col-sm-12" id="odissi_dance">
-                                            <h3 class="accordian-header"><span class="glyphicon glyphicon-cd"></span>	 Odissi Dance by Shamoyita</h3>
+                                            <h3 class="accordian-header"><span class="glyphicon glyphicon-cd"></span>	 Odissi Dance by Shamoyita and Group</h3>
                                             <h4 class="accordian-time">Start Time: 8pm</h4>
                                             <div class="col-sm-12">
-                                                <p>A versatile Odissi dancer, Shamoyita, has been nurturing her passion in Odissi dance by performing, practicing and teaching the art for about 20 years now. Shamoyita started her tutelage in Odissi with Smt Sushmita Bhattacharya since she was 13.  She got a bunch of workshop opportunities in Kolkata and Bhuvaneswar with imminent Odissi gurus in India including Guru Ratikant Mohapatra and Smt Sujata Mohapatra - son and daughter-in-law of Late Guru Kelucharan Mohapatra. After she moved to the US, she has been very fortunate to be associated with the Upasana ensemble and with Smt Mouli Pal. she has been performing for the last 6 years and has started teaching as well.  </p>
+                                                <p>Versatile Odissi dancers, Shamoyita Mukherjee, Shibani Santurkar, Ishita Dasgupta and group has been nurturing their passion in Odissi dance by performing, practicing and teaching the art for about 20 years now. </p>
+                                                <p>Shamoyita started her tutelage in Odissi with Smt Sushmita Bhattacharya since she was 13.  She got a bunch of workshop opportunities in Kolkata and Bhuvaneswar with imminent Odissi gurus in India including Guru Ratikant Mohapatra and Smt Sujata Mohapatra - son and daughter-in-law of Late Guru Kelucharan Mohapatra. After she moved to the US, she has been very fortunate to be associated with the Upasana ensemble and with Smt Mouli Pal. Shamoyita has been performing for the last 6 years and has started teaching as well.  </p>
                                             </div>
                                             <div class="col-sm-12">
                                                 <p>Her performances include an ICCR invitation by the consulate of Illinois in 2009, the Mass dance festival 2011 and 2012, Maheswari convenstion of North America to name a few. They also include festivals in India like the Disha Festival, Youth festival Swabhumi, All India Gynaecologists conference at Kolkata and several programs at temples and cultural events both in US and India.</p>
@@ -272,11 +279,34 @@
                                 <div id="day2Culture" class="panel-collapse collapse in">
                                     <div class="panel-body">
                                         <div class="col-sm-12">
-                                            <h3 class="accordian-header"><span class="glyphicon glyphicon-music"></span>	 Shuddhaswar by Shanta Nag</h3>
+                                            <h3 class="accordian-header" id="sreeja_div"><span class="glyphicon glyphicon-music"></span>	 Classical Dance by Sreeja</h3>
+                                            <h4 class="accordian-time">Start Time: 5:00pm</h4>
+                                            <div class="col-sm-12">
+                                                <p>Sreeja is a passionate Indian classical dancer trying to spread the beauty of various Indian classical dance to diverse audiences in USA. She was the judging panel of biggest talent shows in new England. She work with various NGOs to spread her passion. She was recently got appreciation for her choreography from the famous music director padmasree sreevalsan J menon for the beautiful choreography and presentation for his song. She did perform for Asian lunar festival and Asian moon festival.today she will be presenting a bharatanatyam varnam for us.</p>
+                                            </div>
+                                            <br style="clear: both;">
+                                            <h3 class="accordian-header" id="suddhaswar_div"><span class="glyphicon glyphicon-music"></span>	 Shuddhaswar by Shanta Nag</h3>
                                             <h4 class="accordian-time">Start Time: 5:30pm</h4>
                                             <div class="col-sm-12">
                                                 <p>Suddhaswar , led by Shanta Nag has a strong heritage of performing quality music ranging from Indian classical to RabindraSangeet , Bhajan , Najrul Geeti and Modern songs . We are very happy to have them performing in Boston Durga Bari this year . Below is a glimpse of their performance in NABC 2016</p>
                                                 <p><a href="https://www.youtube.com/watch?v=mcAX_d2Kicg&feature=share" target="_blank">Suddhaswar by Shanta Nag</a></p>
+                                            </div>
+                                            <br style="clear: both;">
+                                            <h3 class="accordian-header"><span class="glyphicon glyphicon-music"></span>	 JOJO: Live in Concert</h3>
+                                            <h4 class="accordian-time">Start Time: 6:00pm</h4>
+                                            <div class="col-sm-12">
+                                                <p><i>“Where words fail, music speaks”</i> and Live music speaks for quality of life, it promotes an integrated social experience.</p>
+                                                <p>Dear friends, are you ready for a Powerhouse Performance by one of the most versatile singer of our time? Boston Durga Bari is proud to welcome Ms Jojo and her team for a musical night this Puja.</p>
+                                                <p>
+                                                    <b>
+                                                        Venue : South Middle School, Braintree <br>
+                                                        Date : October 2nd , 2016 <br><br>
+                                                    </b>
+                                                    Please write us with any question or request on concert tickets. Please note that , our full one day and 2 days puja packages include complementary ticket for the concert.
+                                                    Please follow all update related to concert in
+                                                    <a href="https://www.facebook.com/JojoLiveinConcertBostonDurgabari/" target="_blank">Jojo Live Concert Durgabari</a>
+                                                    Let's make it a memorable evening together!
+                                                </p>
                                             </div>
                                         </div>
                                     </div>

@@ -40,8 +40,8 @@
                 </div>
             </a>
             <a href="#drama_checked_in">
-                <div class="col-sm-6 text-center">
-                    <img src="images/drama_checked_in.jpg" alt="Angry Bird" class="home-6-images"/>
+                <div class="col-sm-4 text-center">
+                    <img src="images/drama_checked_in.jpg" alt="Angry Bird" class="home-4-images"/>
                     <p class="image-text">DRAMA: CHECKED-IN</p>
                 </div>
             </a>
@@ -51,13 +51,19 @@
                     <p class="image-text">FOOD</p>
                 </div>
             </a>
+            <a href="" ng-click="hCtrl.setTab(2); hCtrl.goToEvent('sreeja_div');" ng-class="{active:hCtrl.isSet(2)}" id="sreeja_dance">
+                <div class="col-sm-2 text-center">
+                    <img src="images/sreejana.jpeg" alt="Angry Bird" class="home-2-images"/>
+                    <p class="image-text">CLASSICAL DANCE BY SREEJA</p>
+                </div>
+            </a>
             <div>&nbsp;</div>
         </div>
         <div class="col-sm-12" style="background-color: #000">
             <a href="" ng-click="hCtrl.setTab(1); hCtrl.goToEvent('odissi_dance');" ng-class="{active:hCtrl.isSet(1)}" id="image_odissi">
                 <div class="col-sm-3 text-center">
                     <img src="images/Shamoyita-Odissi.jpg" alt="Angry Bird" class="home-3-images"/>
-                    <p class="image-text">ODISSI DANCE BY SHAMOYITA MUKHERJEE</p>
+                    <p class="image-text">ODISSI DANCE BY SHAMOYITA MUKHERJEE AND GROUP</p>
                 </div>
             </a>
             <a href="" ng-click="hCtrl.setTab(1); hCtrl.goToEvent('classical_music');" ng-class="{active:hCtrl.isSet(1)}" id="image_classical">
