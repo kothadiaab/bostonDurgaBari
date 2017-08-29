@@ -6,7 +6,7 @@
     <title></title>
 </head>
 <body>
-    <P class="durga-banner">DURGOTSAV 2016</P>
+    <P class="durga-banner">DURGOTSAV 2017</P>
     <div class="container">
         <div class="row our-vision-font">
             <div class="col-sm-12" style="background-color: #000">
@@ -17,27 +17,27 @@
                         <p class="image-text">PUJA</p>
                     </div>
                 </a>
-                <a href="#drama_checked_in">
+                <!-- <a href="#drama_checked_in">
                     <div class="col-sm-4 text-center">
                         <img src="images/drama_checked_in.jpg" alt="Angry Bird" class="home-4-images"/>
                         <p class="image-text">DRAMA: CHECKED-IN</p>
                     </div>
-                </a>
+                </a> -->
                 <a href="" ng-click="hCtrl.setTab(1); hCtrl.goToEvent('day1Food');" ng-class="{active:hCtrl.isSet(1)}" id="image_food">
                     <div class="col-sm-3 text-center">
                         <img src="images/pujo_food.png" alt="Angry Bird" class="home-3-images"/>
                         <p class="image-text">FOOD</p>
                     </div>
                 </a>
-                <a href="" ng-click="hCtrl.setTab(2); hCtrl.goToEvent('sreeja_div');" ng-class="{active:hCtrl.isSet(2)}" id="sreeja_dance">
+                <!-- <a href="" ng-click="hCtrl.setTab(2); hCtrl.goToEvent('sreeja_div');" ng-class="{active:hCtrl.isSet(2)}" id="sreeja_dance">
                     <div class="col-sm-2 text-center">
                         <img src="images/sreejana.jpeg" alt="Angry Bird" class="home-2-images"/>
                         <p class="image-text">CLASSICAL DANCE BY SREEJA</p>
                     </div>
-                </a>
+                </a> -->
                 <div>&nbsp;</div>
             </div>
-            <div class="col-sm-12" style="background-color: #000">
+            <!-- <div class="col-sm-12" style="background-color: #000">
                 <a href="" ng-click="hCtrl.setTab(1); hCtrl.goToEvent('odissi_dance');" ng-class="{active:hCtrl.isSet(1)}" id="image_odissi">
                     <div class="col-sm-3 text-center">
                         <img src="images/Shamoyita-Odissi.jpg" alt="Angry Bird" class="home-3-images"/>
@@ -62,19 +62,18 @@
                         <p class="image-text">SHUDDHASWAR BY<br/>SHANTA NAG</p>
                     </div>
                 </a>
-                <!--<div class="col-sm-12">&nbsp;</div>-->
-            </div>
+            </div> -->
             <div class="col-sm-12">&nbsp;</div>
             <div class="col-sm-8">
                 <ul class="nav nav-tabs">
-                    <li role="presentation" ng-class="{active:hCtrl.isSet(1)}"><a href ng-click="hCtrl.setTab(1)" data-toggle="tab" class="nav-tab-prop"><span class="glyphicon glyphicon-calendar"></span> October 01</a></li>
-                    <li role="presentation" ng-class="{active:hCtrl.isSet(2)}"><a href ng-click="hCtrl.setTab(2)" data-toggle="tab" class="nav-tab-prop"><span class="glyphicon glyphicon-calendar"></span> October 02</a></li>
+                    <li role="presentation" ng-class="{active:hCtrl.isSet(1)}"><a href ng-click="hCtrl.setTab(1)" data-toggle="tab" class="nav-tab-prop"><span class="glyphicon glyphicon-calendar"></span> Septmber 30</a></li>
+                    <li role="presentation" ng-class="{active:hCtrl.isSet(2)}"><a href ng-click="hCtrl.setTab(2)" data-toggle="tab" class="nav-tab-prop"><span class="glyphicon glyphicon-calendar"></span> October 01</a></li>
                     <li role="presentation" ng-class="{active:hCtrl.isSet(3)}" ng-click="initMap()"><a href ng-click="hCtrl.setTab(3)" data-toggle="tab" class="nav-tab-prop"><span class="glyphicon glyphicon-map-marker"></span> Venue</a></li>
                 </ul>
                 <div ng-show="hCtrl.isSet(1)" class="october1-tab col-sm-12">
                     <div id="day1">
                         <div>&nbsp;</div>
-                        <h3 style="margin-top: 0px;">October 1:</h3>
+                        <h3 style="margin-top: 0px;">Septmber 30:</h3>
                         <div class="panel-group" id="accordion">
                             <div class="panel panel-default">
                                 <div class="panel-heading" data-toggle="collapse" data-target="#day1Puja" style="background-color: #ffd633; color: #000">
@@ -151,7 +150,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="panel panel-default">
+                            <!-- <div class="panel panel-default">
                                 <div class="panel-heading" data-toggle="collapse" data-target="#day1Culture" style="background-color: #ffd633; color: #000">
                                     <h4 class="panel-title collapsed" data-toggle="collapse" data-target="#day1Culture">
                                         Cultural Program
@@ -189,15 +188,15 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
                 <div ng-show="hCtrl.isSet(2)" class="october2-tab col-sm-12">
                     <div id="day2">
                         <div>&nbsp;</div>
-                        <h3 style="margin-top: 0px;">October 2:</h3>
-                        <div class="panel-group" id="accordion2">
+                        <h3 style="margin-top: 0px;">Coming Soon...</h3>
+                        <!-- <div class="panel-group" id="accordion2">
                             <div class="panel panel-default">
                                 <div class="panel-heading" data-toggle="collapse" data-target="#day2Puja" style="background-color: #ffd633; color: #000">
                                     <h4 class="panel-title collapsed" data-toggle="collapse" data-target="#day2Puja">
@@ -312,7 +311,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div ng-show="hCtrl.isSet(3)" class="venue-tab col-sm-12">
