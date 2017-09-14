@@ -67,7 +67,7 @@ bdbApp
 
         $scope.initMap = function () {
             var mapDiv = document.getElementById('map');
-            var myLatLng = {lat: 42.184154, lng: -70.997325};
+            var myLatLng = {lat: 42.243794, lng: -70.982008};
             var map = new google.maps.Map(mapDiv, {
                 center: myLatLng,
                 zoom: 12
